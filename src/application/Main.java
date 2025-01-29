@@ -3,9 +3,8 @@ package application;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import view.gui.MainViewController;
 
 
 public class Main extends Application {
@@ -15,14 +14,14 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/gui/MainView.fxml"));
-			AnchorPane anchorPane = loader.load();
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/gui/LoginView.fxml"));
+			BorderPane anchorPane = loader.load();
 			
 			mainScene = new Scene(anchorPane);
 			
-			MainViewController.loadLoginView(new FXMLLoader(getClass().getResource("/view/gui/Login.fxml")));
 			primaryStage.setScene(mainScene);
 			primaryStage.setMaximized(true);
+			//MainViewController.loadLoginView(new FXMLLoader(getClass().getResource("/view/gui/LoginView.fxml")));
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
