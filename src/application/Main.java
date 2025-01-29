@@ -2,11 +2,10 @@ package application;
 	
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.stage.Stage;
-import view.gui.controllers.MainViewController;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
+import view.gui.MainViewController;
 
 
 public class Main extends Application {
