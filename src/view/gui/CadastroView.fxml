@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.gui.CadastroViewController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="448.0" prefWidth="538.0">
+         <children>
+            <TextField fx:id="txtNomeCompleto" layoutX="195.0" layoutY="115.0" promptText="Nome completo" />
+            <TextField fx:id="txtEmail" layoutX="195.0" layoutY="151.0" promptText="Email" />
+            <TextField fx:id="txtRepetirSenha" layoutX="195.0" layoutY="256.0" promptText="Repetir senha" />
+            <TextField fx:id="txtSenha" layoutX="195.0" layoutY="224.0" promptText="Senha" />
+            <TextField fx:id="txtNomeUsuario" layoutX="195.0" layoutY="189.0" promptText="Nome de usuário" />
+            <Button fx:id="btnCadastrar" layoutX="195.0" layoutY="295.0" mnemonicParsing="false" onAction="#onBtnCadastrar" text="Cadastrar" textAlignment="CENTER" textFill="#001eff" />
+            <Button fx:id="btnCancelar" layoutX="282.0" layoutY="295.0" mnemonicParsing="false" onAction="#onBtnCancelar" text="Cancelar" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
